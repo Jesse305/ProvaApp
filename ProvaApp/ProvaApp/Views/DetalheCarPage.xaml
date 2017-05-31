@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProvaApp.Views.DetalheCarPage"
+             Title="{Binding Modelo}">
+
+    <ScrollView>
+        <StackLayout Padding="5"
+                     HorizontalOptions="Center">
+
+            <Image Source="{Binding Imagem}"
+                   HeightRequest="300"
+                   WidthRequest="250" />
+            
+            <Label Text="{Binding Descricao}" />
+
+            <Button Text="Assistar video"
+                    x:Name="btnVisitarPagina"
+                    VerticalOptions="End"
+                    BackgroundColor="#00BFFF"
+                    TextColor="White"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
